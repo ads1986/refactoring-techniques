@@ -1,6 +1,6 @@
 package com.refactoring.techniques.composing.methods;
 
-public class InlineMethod {
+public class InlineTemp {
 
     /**
      * Example before refactore.
@@ -13,18 +13,19 @@ public class InlineMethod {
             this.dailyPrice = dailyPrice;
         }
 
-        public double calculatePrice(){
-            return hasTax() ? (dailyPrice - 10) : dailyPrice;
+        public boolean hasMinimumValue(){
+            double liquidPrice = liquidPrice();
+            return liquidPrice > 10000;
         }
 
-        public boolean hasTax(){
-            return dailyPrice > 100;
+        public double liquidPrice(){
+            return dailyPrice - 100;
         }
 
     }
 
     /**
-     * Example after applying Inline Method technique
+     * Example after applying Inline Temp technique
      */
     class RefactoredCarRent {
 
@@ -34,8 +35,12 @@ public class InlineMethod {
             this.dailyPrice = dailyPrice;
         }
 
-        public double calculatePrice(){
-            return dailyPrice > 100 ? (dailyPrice - 10) : dailyPrice;
+        public boolean hasMinimumValue(){
+            return liquidPrice() > 10000;
+        }
+
+        public double liquidPrice(){
+            return dailyPrice - 100;
         }
 
     }
