@@ -27,6 +27,10 @@ public class ReplaceTemp {
 
     /**
      * Example after applying Extract Method technique
+     * Tip: This technique can cause perfomance issues,
+     * because whe are always calculating getSalesPrice,
+     * rather then reusing a variable when whe do:
+     * double salePrice = this.price - ((this.price * this.discount) / 100);
      */
     class RefactoredCarRetail {
 

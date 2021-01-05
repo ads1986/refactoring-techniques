@@ -31,6 +31,11 @@ public class ExtractVariables {
 
     /**
      * Example after applying Extract Variables technique
+     * Tip: This technique can cause performance issues,
+     * because we always do the calculations, to return the
+     * variables hasMinimuLiter, hasMinimumTorque and hasMinimumPrice.
+     * Without extracting, if the first condition ((this.liter > 5))
+     * is not achiaved, we will jump to the else statmenet.
      */
     class RefactoredCarSpecification {
 
