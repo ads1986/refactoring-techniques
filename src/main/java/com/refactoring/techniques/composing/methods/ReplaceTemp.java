@@ -1,18 +1,16 @@
 package com.refactoring.techniques.composing.methods;
 
-import com.refactoring.techniques.model.Car;
-
 public class ReplaceTemp {
 
     /**
      * Example before refactore.
      */
-    class CarRetailService {
+    class CarRetail {
 
         private double price;
         private double discount;
 
-        public CarRetailService(double price, double discount) {
+        public CarRetail(double price, double discount) {
             this.price = price;
             this.discount = discount;
         }
@@ -30,12 +28,12 @@ public class ReplaceTemp {
     /**
      * Example after applying Extract Method technique
      */
-    class RefactoredCarRetailService {
+    class RefactoredCarRetail {
 
         private double price;
         private double discount;
 
-        public RefactoredCarRetailService(double price, double discount) {
+        public RefactoredCarRetail(double price, double discount) {
             this.price = price;
             this.discount = discount;
         }
