@@ -1,4 +1,4 @@
-package com.refactoring.techniques.composing.methods.extract.method;
+package com.refactoring.techniques.model;
 
 public class Car {
     private String name;
