@@ -26,6 +26,9 @@ public class InlineTemp {
 
     /**
      * Example after applying Inline Temp technique
+     * Tip : Use only if the variable is not caching
+     * a value to improve the performance, and space
+     * usage.
      */
     class RefactoredCarRent {
 
