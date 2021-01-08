@@ -1,6 +1,6 @@
 package com.refactoring.techniques.moving.features;
 
-public class MethodMove {
+public class MoveMethod {
 
     /**
      * Example before refactore.

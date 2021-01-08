@@ -3,7 +3,7 @@ package com.refactoring.techniques.moving.features;
 import java.time.LocalDate;
 import java.util.List;
 
-public class MethodField {
+public class MoveField {
 
     /**
      * Example before refactore.
