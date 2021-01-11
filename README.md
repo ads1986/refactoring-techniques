@@ -2,7 +2,7 @@
 
 # Refactoring Techniques
 
-Just to brush up my skills in code refactoring, I decided to implement some techniques from presented on [refactoring.guru](https://refactoring.guru). 
+Just for brushing up my skills in code refactoring, I decided to implement some techniques presented on  [refactoring.guru](https://refactoring.guru/refactoring/techniques). 
 I covered the following topics :
 
 ## Composing Methods
